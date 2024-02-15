@@ -25,3 +25,9 @@ color: white;
 text-align: center;
 font-style: italic;
 }
+
+
+div{
+    padding: 10px;
+    text-align: center;
+}
