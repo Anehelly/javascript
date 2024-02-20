@@ -18,18 +18,21 @@ function contar(){
         return;
     }
 
-    res.innerHTML = 'Iniciando contagem: '; // Limpa o conteúdo anterior
+    res.innerHTML = 'Iniciando a contagem...';
+    setTimeout(function() {
+        res.innerHTML = 'Contando... '; // Limpa o conteúdo anterior
 
-   
-    for (var c = num1; c <= num2; c+=cont) {
-        res.innerHTML += c + '👉'; // Adiciona cada número ao conteúdo do elemento res
-    }
-    res.innerHTML += ' fim 🚩';
-}
-
-
-// res.innerHTML = 'Iniciando contagem: '; // Limpa o conteúdo anterior
-
-for (var c = num1; c <= num2; c += cont) {
-    res.innerHTML += c + ' '; // Adiciona cada número ao conteúdo do elemento res
+        // Verifica se a contagem é progressiva ou regressiva
+        if (num1 < num2) {
+            for (var c = num1; c <= num2; c += cont) {
+                res.innerHTML += c + '👉'; // Adiciona cada número ao conteúdo do elemento res
+            }
+            res.innerHTML += ' fim 🚩';
+        } else {
+            for (var c = num1; c >= num2; c -= cont) {
+                res.innerHTML += c + '👉'; // Adiciona cada número ao conteúdo do elemento res
+            }
+            res.innerHTML += ' fim 🚩';
+        }
+    }, 2000); // Atraso de 2 segundos (2000 milissegundos)
 }
