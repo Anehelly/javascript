@@ -25,3 +25,15 @@ color: white;
 text-align: center;
 font-style: italic;
 }
+
+#res{
+    color: black;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    font-size: 10pt;
+    padding: 8px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
