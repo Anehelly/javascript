@@ -14,10 +14,10 @@ function verificar(){
         if(fsex[0].checked){// Se o que foi marcado foi a primeira opção
             genero = 'homem'
             document.body.style.background = '#'
-            if (idade >=0 && idade <10){
+            if (idade >=0 && idade <15){
                 //criança
                img.setAttribute('src', 'menino.png')
-            }else if(idade <21){
+            }else if(idade <29){
                 //jovem 
                 img.setAttribute('src', 'hjovem.png')
             }else if (idade <50){
@@ -29,10 +29,10 @@ function verificar(){
             }
         }else if (fsex[1].checked){
             genero = 'mulher'
-            if (idade >=0 && idade<10){
+            if (idade >=0 && idade<15){
                 //criancça
                 img.setAttribute('src', 'menina.png')
-            }else if(idade <21){
+            }else if(idade <29){
                 //jovem
                 img.setAttribute('src', 'mjovem.png')
             }else if(idade <50){
